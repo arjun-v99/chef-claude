@@ -3,3 +3,12 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.btn-primary {
+  padding: 5px 16px;
+  border-radius: 6px;
+  background: rgba(20, 20, 19, 1);
+  color: rgba(250, 250, 248, 1);
+  font-family: Inter, Helvetica, sans-serif;
+  border: none;
+}
