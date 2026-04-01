@@ -1,4 +1,4 @@
-export function IngredientsList({ ingrediants, setRecipeRecievedStatus }) {
+export function IngredientsList({ ingrediants, getRecipe }) {
   const ingrediantsListItems = ingrediants.map((ingrediant) => (
     <li>{ingrediant}</li>
   ));
@@ -13,7 +13,7 @@ export function IngredientsList({ ingrediants, setRecipeRecievedStatus }) {
             <p>Generate a recipe from your list of ingredients</p>
           </div>
           <div>
-            <button onClick={setRecipeRecievedStatus}>Get a Recipe</button>
+            <button onClick={getRecipe}>Get a Recipe</button>
           </div>
         </div>
       )}
