@@ -1,4 +1,4 @@
-export function IngredientsList({ ingrediants, getRecipe }) {
+export function IngredientsList({ ingrediants, getRecipe, ref }) {
   const ingrediantsListItems = ingrediants.map((ingrediant) => (
     <li>{ingrediant}</li>
   ));
@@ -8,7 +8,7 @@ export function IngredientsList({ ingrediants, getRecipe }) {
       <ul className="ingredients-list">{ingrediantsListItems}</ul>
       {ingrediants.length > 3 && (
         <div className="get-recipe-container">
-          <div>
+          <div ref={ref}>
             <h3>Ready for a recipe?</h3>
             <p>Generate a recipe from your list of ingredients</p>
           </div>
